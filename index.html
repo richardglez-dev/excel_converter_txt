@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Excel a TXT | Herramienta interna</title>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CONVERTIDOR EXCEL A TXT</title>
 <style>
 :root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#1e293b;background:#f3f5f9}*{box-sizing:border-box}body{margin:0;padding:48px 16px}.card{max-width:780px;margin:auto;background:white;border:1px solid #e2e8f0;border-radius:16px;padding:32px;box-shadow:0 8px 30px #17233b0d}h1{margin:0 0 8px;font-size:27px}p{color:#64748b;line-height:1.5}.drop{display:block;border:2px dashed #94a3b8;border-radius:12px;padding:27px;text-align:center;cursor:pointer;margin:24px 0;background:#f8fafc}.drop strong{display:block;margin-bottom:8px}.drop input{display:none}button{background:#2358cb;color:white;font-size:15px;font-weight:600;border:0;border-radius:9px;padding:13px 20px;cursor:pointer}button:disabled{background:#94a3b8;cursor:not-allowed}.actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}#estado{font-size:14px;color:#475569}pre{overflow:auto;max-height:250px;padding:18px;background:#0f172a;color:#d3e4ff;border-radius:10px;font:12px/1.75 Consolas,monospace;white-space:pre}small{color:#64748b}.hidden{display:none}.error{color:#b91c1c!important}</style></head>
-<body><main class="card"><h1>Excel a TXT</h1><p>Conversión de lista de precios al formato TXT requerido. Las columnas y el orden están predefinidos.</p>
+<body><main class="card"><h1>CONVERTIDOR EXCEL A TXT</h1>
 <label class="drop" id="zona"><strong>Seleccionar un archivo Excel</strong><span id="nombre">Hacé clic o arrastrá un archivo .xlsx / .xls</span><input id="archivo" type="file" accept=".xlsx,.xls"></label>
 <div class="actions"><button id="convertir" disabled>Convertir y descargar TXT</button><span id="estado">Seleccioná un archivo para comenzar.</span></div>
 <section id="vista" class="hidden"><h3>Vista previa (primeras 5 líneas)</h3><pre id="previa"></pre><small id="resumen"></small></section>
-<p><small>Los datos se procesan en tu navegador y no se envían a un servidor. La lectura Excel requiere la biblioteca SheetJS (se carga desde CDN; para uso 100 % sin Internet, guardá su archivo JS localmente).</small></p></main>
+</main>
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 <script>
 // CONFIGURACIÓN FIJA. Fuente: Lista_Preco_ME_IPS_Latina.
